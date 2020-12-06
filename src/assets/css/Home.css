@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap);
+button:focus{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+.TopNavBar{
+    height: 80px;
+    width: 100%;
+    background-color: #ED383F;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navitems{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.Navitems > span{
+    cursor: pointer;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+
+.DIVIDER{
+    margin-right: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.UNDERLINE{
+    width: 50%;
+    height: 2px;
+    margin-top:2px;
+    background-color: white;
+}
+.NOTIFICATION{
+    cursor: pointer;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 50px;
+}
+.LOGOUTICON{
+    cursor: pointer;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 50px;
+}
+.TopNavBar > h4{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+/* .HomePageBase{
+    background-color: aqua;
+} */
+.WhatAreYouDiv{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+}
+.WhatAreYouDiv > button{
+    margin-left: auto;
+    width: 10%;
+}
+.WhoBtn{
+    height: 40px;
+    width: 100%;
+    background: #C4C4C4;
+    border: none;
+    outline: none;
+}

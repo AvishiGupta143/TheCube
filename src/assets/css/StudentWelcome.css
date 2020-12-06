@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css2?family=Spectral&display=swap);
+
+.DASHBOARDHEAD{
+    width: 100%;
+    height:230px;
+    background-color: #ED383F;
+    display: flex;
+    flex-direction: row;
+}
+
+.DASHBOARDHEAD > img{
+    width: auto;
+    margin-left: auto;
+    margin-right: 50px;
+    height: 180px;
+}
+
+.DASHBOARDINFO{
+    padding: 30px;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+}
+.DASHBOARDINFO > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.DASHBOARDINFO > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.DASHBOARDCONTENT{
+    /* z-index: 100; */
+    width: 95%;
+    margin: auto;
+    height: auto;
+    margin-top: -60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ColumnDivs{
+    width: 68%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.OverviewDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.OverviewDiv > img{
+    width: 60%;
+    height: auto;
+}
+.OverviewText{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.OverviewText > h4{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.OverviewText > h5{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #252525;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.OverviewText > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;  
+    margin: 0;
+}
+.OverviewText > h6{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;  
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.OverviewText > span{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+
+
+.AllProjectDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.AllProjectDiv > h4{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.AllProjectDiv > span{
+    cursor: pointer;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+    margin-left: auto;
+    margin-top: 10px;
+}
+.AllProjectDiv > span:hover{
+    text-decoration: underline;
+}
+.ProgressDiv{
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.ProgressDiv > h4{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.RIGHTALIGN{
+    text-align: right !important;
+}
+
+.REDCOLOR{
+    color: #ED383F !important;
+}
+.EachProgressBar{
+    width: 100%;
+    border-collapse:separate; 
+    border-spacing:0 15px; 
+}
+.EachProgressBar tr{
+    background: #F9F9F9;
+    border-radius: 10px;
+}
+.EachProgressBar th{
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.EachProgressBar td{
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+
+
+.ROWDivs{
+    background-color: coral;
+    width: 30%;
+    margin-left: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.ROWDivs > h4{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+    margin-top: 30px;
+}
+.ROWDivs > span{
+    cursor: pointer;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+    margin-top: 20px;
+}
+.ROWDivs > span:hover{
+    text-decoration: underline;
+}
+.TeamMembersDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.TeamMembersDiv > img{
+    width: 10%;
+    height: auto;
+}
+
+.TeamMembersDiv > span{
+    margin: auto;
+    margin-left: 20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.TeamFacultyDiv{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.TeamFacultyDiv > small{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin: 0;
+    margin-left: 20px;
+}
+.TeamFacultyDiv > span{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+    margin: 0;
+    margin-left: 20px;
+}

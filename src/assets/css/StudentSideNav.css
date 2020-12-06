@@ -1,0 +1,127 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+.StudentSideNav{
+    width: 20%;
+    height: 89.2vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.StudentSideNav > h5{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.ProgressFlow{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.ProgressFlowName{
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.ProgressFlowName > span{
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+.ProgressFlowName > p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+.ProgressLine{
+    height: 25px;
+    width: 2px;
+    margin-left: 6px;
+    background-color: darkgrey;
+    border: 1px solid #000000;
+}
+
+.UnderLine{
+    width: 90%;
+    background-color: darkgrey;
+    height: 1.5px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.ParticipantsList{
+    display: flex;
+    flex-direction: column;
+}
+.ParticipantsList > span{
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.fa-angle-down{
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fa-angle-up{
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ParticipantsList > p{
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.DropdownList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.DropdownList > p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.LogoutDiv{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin-top: auto;
+}
+.LogoutDiv > i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+.LogoutDiv > p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}

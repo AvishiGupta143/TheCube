@@ -1,0 +1,132 @@
+.FacultySignUpDiv{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.FacultySignUpDiv > h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+.FacultySignUpDiv > h5{
+    text-align: center;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+.FacultySignUpDiv > input{
+    width: 50%;
+    margin: auto;
+    height: 40px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.FacultySignUpDiv > a{
+    margin: auto;
+    width: 20%;
+}
+
+.SIGNBTN{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background: #C4C4C4;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+.FacultySignUpDiv > span{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.LoginOpt{
+    cursor: pointer;
+    color: rgb(95, 95, 212);
+    margin-left: 5px;
+}
+
+
+/* Login for Faculty */
+
+.FacultyLoginDiv{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.FacultyLoginDiv > h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+.FacultyLoginDiv > h5{
+    text-align: center;
+    font-size: 25px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+.FacultyLoginDiv > input{
+    width: 50%;
+    margin: auto;
+    height: 40px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+}
+.FacultyLoginDiv > a{
+    margin: auto;
+    width: 20%;
+}
+
+.LOGINBTN{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background: #C4C4C4;
+    border: none;
+    outline: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+.FacultyLoginDiv > span{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 10px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
