@@ -23,6 +23,7 @@ a:hover{
     padding: 25px;
     display: flex;
     flex-direction: row;
+    position: fixed;
 }
 
 .Navitems{
@@ -72,24 +73,39 @@ a:hover{
     line-height: 30px;
     color: #FFFFFF;
 }
-/* .HomePageBase{
-    background-color: aqua;
-} */
-.WhatAreYouDiv{
+.HomePage{
     display: flex;
     flex-direction: row;
-    height: 80px;
-    width: 100%;
-    padding: 20px;
 }
-.WhatAreYouDiv > button{
-    margin-left: auto;
-    width: 10%;
+
+.IllustrationDiv{
+    width: 40%;
+    padding: 15px;
+    background-color: #ED383F;
 }
-.WhoBtn{
-    height: 40px;
-    width: 100%;
-    background: #C4C4C4;
-    border: none;
-    outline: none;
+.IllustrationDiv > img{
+    width: 85%;
+    margin:20px 0px 0px 40px;
+}
+
+.IllustrationDiv > h3{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.IllustrationDiv > h2{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 500;
+    font-size:35px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 100px 0px 0px 20px;
+}
+
+.WorkingDiv{
+    width: 60%;
 }

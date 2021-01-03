@@ -1,0 +1,397 @@
+.StudentProfileDiv{
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+}
+
+.StudentProfileSideBar{
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.StudentProfileSideBar > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+}
+.StudentProfileSideBar > span{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin-top: 5px;
+}
+.StudentProfileSideBar > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.TeamFormedDiv > span{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin-top: 10px;
+}
+.TeamFormedDiv > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.StudentProfileSideBar > img{
+    width:50%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.StudentProfileSideBar > h4{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #252525;
+}
+.StudentProgressDiv{
+    margin-top: 30px;
+}
+
+.DoneTask{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.UnDoneTask{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.DoingTask{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.DoneTask > span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background: #ED383F;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.DoingTask > span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #ED383F;
+    color: #ED383F;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+}
+.UnDoneTask > span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background: #FFFFFF;
+    border: 2px solid #A6A6A6;
+    box-sizing: border-box;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.DoneTask > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #252525;
+    margin: 0px;
+}
+
+.DoingTask > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    color: #252525;
+    margin: 0px;
+}
+
+.UnDoneTask > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    color: #A6A6A6;
+    margin: 0px;
+}
+
+
+.ProgLineDone{
+    width: 2px;
+    height: 30px;
+    background-color: #ED383F;
+    margin-left: 19px;
+}
+.ProgLineUnDone{
+    width: 2px;
+    height: 30px;
+    background-color:#A6A6A6;
+    margin-left: 19px;
+}
+
+
+
+/* STUDENT CONTENT PART */
+
+.StudentProfileContent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.ProjectUnderTakenPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.ProjectUnderTakenPart > h5{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+}
+.ProjectUnderTakenPart > img{
+    width: 7%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.ProjectUnderTakenPart > span{
+    margin-top: 10px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #A6A6A6;
+}
+.ProjectUnderTakenPart > small{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+.ProjectUnderTakenPart> h3{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #252525;
+    margin-top: 10px;
+}
+.ProjectUnderTakenPart > a{
+    opacity: 70%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ED383F;
+    margin: auto;
+    width: auto;
+}
+.ProjectUnderTakenPart >a:hover{
+    text-decoration: underline !important;
+}
+
+
+
+.TeamMembersPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.TeamMembersPart > h5{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+}
+.TeamMembersPart > img{
+    width: 10%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.TeamMembersPart > span{
+    margin-top: 10px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #A6A6A6;
+}
+
+.TeamMembersPart > a{
+    opacity: 70%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ED383F;
+    margin: auto;
+    width: auto;
+}
+.TeamMembersPart >a:hover{
+    text-decoration: underline !important;
+}
+
+.TeamMembersPart > table td{
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.TeamMembersPart > table th{
+    width: 50px;
+    padding: 15px;
+}
+.LightWeight{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin-right: 10px;
+}
+
+.FacultyMentorPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.FacultyMentorPart > h5{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+}
+.FacultyMentorPart > img{
+    width: 7%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.FacultyMentorPart > span{
+    margin-top: 10px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #A6A6A6;
+}
+
+.FacultyMentorPart > a{
+    opacity: 70%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ED383F;
+    margin: auto;
+    width: auto;
+}
+.FacultyMentorPart >a:hover{
+    text-decoration: underline !important;
+}
+.FacultyMentorPart > table td{
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+    color: #252525;
+}
+.FacultyMentorPart > table td p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #252525;
+    margin: 0;
+}
+.FacultyMentorPart > table th{
+    width: 50px;
+    padding: 15px;
+}

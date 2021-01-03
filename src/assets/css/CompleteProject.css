@@ -2,10 +2,11 @@
 
 .COMPLETEPROJECTHEAD{
     width: 100%;
-    height:230px;
+    height:300px;
     background-color: #ED383F;
     display: flex;
     flex-direction: row;
+    padding-top: 70px;
 }
 
 .COMPLETEPROJECTHEAD > img{
@@ -51,4 +52,131 @@
     margin-top: -60px;
     display: flex;
     flex-direction: row;
+}
+
+
+.MeetingDiv{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    background: #FEF5F5;
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+.MeetingDiv > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin-top: -20px;
+}
+.MeetingDiv > button{
+    background: #ED383F;
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+}
+.MeetingModalHead > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ED383F;
+    margin: 0px;
+}
+
+.MeetingModalBody{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.MeetingModalBody > p{
+    width: 95%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.MeetingModalBody > span{
+    width: 95%;
+    margin: auto;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #252525;
+}
+
+.MeetingModalBody > input{
+    background: #F9F9F9;
+    border-radius: 10px;   
+    height: 50px;
+    padding: 5px; 
+    border: none;
+    outline: none;
+    width: 48%;
+    margin: auto;
+    margin-top:20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+.MeetingModalBody > textarea{
+    background: #F9F9F9;
+    border-radius: 10px;   
+    height: 150px;
+    padding: 12px; 
+    border: none;
+    outline: none;
+    width:98%;
+    margin: auto;
+    margin-top:20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+
+.MeetingModalBody > button{
+    background: #ED383F;
+    border-radius: 50px;
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
 }

@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     padding: 30px;
+    padding-top: 120px;
 }
 .SelectMentorPage > p{
     width: 60%;

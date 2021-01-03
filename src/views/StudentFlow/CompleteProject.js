@@ -5,18 +5,39 @@ import "../../assets/css/CompleteProject.css";
 import PlanePic from '../../assets/css/PlanePic.png'; 
 import OverviewPic from '../../assets/css/OverviewPic.png';
 import User from '../../assets/css/User.png';
+import MeetingSvg from '../../assets/css/MeetingSvg.svg';
+import { Modal } from 'react-bootstrap';
 
 export class CompleteProject extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             MeetingModal:false
+        }
+    }
+    
+    
 
     UploadDoc = () =>{
         document.getElementById("UPLOAD").click()
-        console.log("UPLOAD NOW")
         this.setState({
             Uploaded:true
         })
 
     }
     
+    CloseMeetingModal = () => {
+        this.setState({
+            MeetingModal:false
+        })
+    }
+
+    OpenMeetingModal = () => {
+        this.setState({
+            MeetingModal:true
+        })
+    }
     render() {
         return (
             <Fragment>
@@ -112,8 +133,48 @@ export class CompleteProject extends Component {
                                     <small>Assistant Professor, IT</small>
                                 </div>
                             </div>
+
+
+                            <div className='MeetingDiv'>
+                                <img src={MeetingSvg}></img>
+                                <p>You can schedule a meeting with your mentor and team members to have discussions about your project!</p>
+                                <button onClick={this.OpenMeetingModal}>Schedule a Meeting</button>
+                            </div>
                     </div>
                 </div>
+
+
+                <Modal  
+                    backdrop="static"
+                    size='md'
+                    keyboard={false}
+                    className='MeetingModal' show={this.state.MeetingModal} onHide={this.CloseMeetingModal}>
+                    <Modal.Header className='MeetingModalHead'>
+                        <h3>Schedule a Meeting</h3>
+                        <button className='SuggestModalClose' onClick={this.CloseMeetingModal}>
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.6699 6.05078L6.66992 18.0508" stroke="#ED383F" 
+                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M6.66992 6.05078L18.6699 18.0508" stroke="#ED383F" 
+                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                        </button>
+                    </Modal.Header>
+                    <Modal.Body className='MeetingModalBody'>
+                        <p>Your Faculty</p>
+                        <span>Ms Shikha Baliyan</span>
+                        <p>Your Team Members</p>
+                        <span>Avishi Gupta</span>
+                        <span>Aditi Saini</span>
+                        
+                        <input type='date' placeholder='MEETING DATE(dd/mm/yyyy)'></input>
+                        <input type='time' placeholder='MEETING TIME(24 hours format)'></input>
+
+                        <textarea placeholder='PURPOSE OF MEETING'></textarea>
+
+                        <button>Send Meeting Request</button>
+                    </Modal.Body>
+                </Modal>
             </Fragment>
         )
     }

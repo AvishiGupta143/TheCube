@@ -41,7 +41,7 @@ export class StudentWelcome extends Component {
                         <div className='ProgressDiv'>
                             <div className='AllProjectDiv'>
                                 <h4>Projects Available</h4>
-                                <span>View All</span>
+                                <span><Link to='/cube/studentdashboard/AllProjects'>View All</Link></span>
                             </div>
                             <table className='EachProgressBar'>
                                 <tr>

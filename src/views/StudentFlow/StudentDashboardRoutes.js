@@ -4,19 +4,26 @@ import StudentSideNav from './StudentSideNav'
 import TeamFormation from './TeamFormation'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap/dist/react-bootstrap.min.js";
-import "../../assets/css/StudentDashboard.css";
 import SelectMentor from './SelectMentor';
 import CompleteProject from './CompleteProject';
 import SubmitProject from './SubmitProject';
 import TeacherProfile from './TeacherProfile';
 import StudentProfile from './StudentProfile';
 import AllProjects from './AllProjects';
+import Notifications from '../Home/Notifications';
+import { TopBar } from '../Base/TopBar';
+import StudentWelcome from './StudentWelcome';
+import StudentList from '../DashBoard/StudentList';
 
 export class StudentDashboardRoutes extends Component {
     render() {
         return (
             <div className='DashboardRoutesDiv'>
+                <TopBar/>
                 <Switch>
+                    <Route path={'/cube/studentdashboard/welcomestudent'} component={StudentWelcome}></Route>
+                    <Route path={'/cube/studentdashboard/studentlist'} component={StudentList}></Route>
+                    <Route path='/cube/studentdashboard/notifications' component={Notifications}></Route>
                     <Route path="/cube/studentdashboard/TeamFormation" component={TeamFormation}></Route>
                     <Route path="/cube/studentdashboard/StudentProfile" component={StudentProfile}></Route>
                     <Route path="/cube/studentdashboard/SelectMentor" component={SelectMentor}></Route>

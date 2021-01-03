@@ -1,0 +1,58 @@
+.AllProjectsDiv{
+    padding: 40px;
+    padding-top: 120px;
+}
+.AllProjectsDiv > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+}
+
+.AllProjectsTable{
+    margin-top: 30px;
+    width: 100%;
+}
+.AllProjectsTable thead{
+    background: #FEF5F5;
+    border-radius: 10px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EC383F;
+}
+.AllProjectsTable th{
+    padding: 20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+.AllProjectsTable tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.AllProjectsTable td{
+    padding: 20px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ViewProjectBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2F80ED;
+}

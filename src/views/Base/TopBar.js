@@ -17,61 +17,61 @@ export class TopBar extends Component {
         }
     }
     
-        componentDidMount() {
-            let loc = this.props.history.location.pathname
+        // componentDidMount() {
+        //     let loc = this.props.history.location.pathname
             
-            console.log(loc)
-            if(loc.includes("welcomestudent"))
-            {
-                this.setState({
-                    DashBoardClicked:true,
-                    FacultiesClicked:false,
-                    StudentClicked:false,
-                    ProfileClicked:false,
-                    ProjectClicked:false
-                })
-            }
-            if(loc.includes("SelectMentor") || loc.includes("MentorProfile"))
-            {
-                this.setState({
-                    DashBoardClicked:false,
-                    FacultiesClicked:true,
-                    StudentClicked:false,
-                    ProfileClicked:false,
-                    ProjectClicked:false
-                })
-            }
-            if(loc.includes("studentlist") || loc.includes("TeamFormation") )
-            {
-                this.setState({
-                    DashBoardClicked:false,
-                    FacultiesClicked:false,
-                    StudentClicked:true,
-                    ProfileClicked:false,
-                    ProjectClicked:false
-                })
-            }
-            if(loc.includes("AllProjects"))
-            {
-                this.setState({
-                    DashBoardClicked:false,
-                    FacultiesClicked:false,
-                    StudentClicked:false,
-                    ProfileClicked:false,
-                    ProjectClicked:true
-                })
-            }
-            if(loc.includes("StudentProfile"))
-            {
-                this.setState({
-                    DashBoardClicked:false,
-                    FacultiesClicked:false,
-                    StudentClicked:false,
-                    ProfileClicked:true,
-                    ProjectClicked:false
-                })
-            }
-        }
+        //     console.log(loc)
+        //     if(loc.includes("welcomestudent"))
+        //     {
+        //         this.setState({
+        //             DashBoardClicked:true,
+        //             FacultiesClicked:false,
+        //             StudentClicked:false,
+        //             ProfileClicked:false,
+        //             ProjectClicked:false
+        //         })
+        //     }
+        //     if(loc.includes("SelectMentor") || loc.includes("MentorProfile"))
+        //     {
+        //         this.setState({
+        //             DashBoardClicked:false,
+        //             FacultiesClicked:true,
+        //             StudentClicked:false,
+        //             ProfileClicked:false,
+        //             ProjectClicked:false
+        //         })
+        //     }
+        //     if(loc.includes("studentlist") || loc.includes("TeamFormation") )
+        //     {
+        //         this.setState({
+        //             DashBoardClicked:false,
+        //             FacultiesClicked:false,
+        //             StudentClicked:true,
+        //             ProfileClicked:false,
+        //             ProjectClicked:false
+        //         })
+        //     }
+        //     if(loc.includes("AllProjects"))
+        //     {
+        //         this.setState({
+        //             DashBoardClicked:false,
+        //             FacultiesClicked:false,
+        //             StudentClicked:false,
+        //             ProfileClicked:false,
+        //             ProjectClicked:true
+        //         })
+        //     }
+        //     if(loc.includes("StudentProfile"))
+        //     {
+        //         this.setState({
+        //             DashBoardClicked:false,
+        //             FacultiesClicked:false,
+        //             StudentClicked:false,
+        //             ProfileClicked:true,
+        //             ProjectClicked:false
+        //         })
+        //     }
+        // }
 
 
 
@@ -128,13 +128,13 @@ export class TopBar extends Component {
         return (
             <Fragment>
                 <div className='TopNavBar'>
-                    <h4><Link to='/cube/welcomestudent'>The Cube</Link></h4>
+                    <h4><Link to='/cube/studentdashboard/welcomestudent'>The Cube</Link></h4>
                     <div className='Navitems'>
-        <span onClick={ () => {this.ToggleNavbar('Dashboard')}}><Link to='/cube/welcomestudent'>Dashboard</Link>{this.state.DashBoardClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Dashboard')}}><Link to='/cube/studentdashboard/welcomestudent'>Dashboard</Link>{this.state.DashBoardClicked ? <div className='UNDERLINE'></div> : null}</span>
 
                     <span onClick={ () => {this.ToggleNavbar('Faculties')}}><Link to='/cube/studentdashboard/SelectMentor'>Faculties</Link>{this.state.FacultiesClicked ? <div className='UNDERLINE'></div> : null}</span>
 
-                    <span onClick={ () => {this.ToggleNavbar('Students')}}><Link to='/cube/studentlist'>Students</Link>{this.state.StudentClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Students')}}><Link to='/cube/studentdashboard/studentlist'>Students</Link>{this.state.StudentClicked ? <div className='UNDERLINE'></div> : null}</span>
 
                     <span onClick={ () => {this.ToggleNavbar('Projects')}}><Link to='/cube/studentdashboard/AllProjects'>Projects</Link>{this.state.ProjectClicked ? <div className='UNDERLINE'></div> : null}</span>
 
@@ -142,6 +142,7 @@ export class TopBar extends Component {
                     </div>
                     <span className='DIVIDER'></span>
 
+                    <Link to='/cube/studentdashboard/notifications'>
                     <svg className='NOTIFICATION'
                     width="20" height="20" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7C16 5.4087 15.3679 3.88258 14.2426 2.75736C13.1174 1.63214 11.5913 1 
@@ -151,6 +152,7 @@ export class TopBar extends Component {
                     20.9965 10 20.9965C9.64964 20.9965 9.30541 20.9044 9.00179 20.7295C8.69818 20.5547 8.44583 
                     20.3031 8.27002 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
+                    </Link>
 
                     <svg className='LOGOUTICON'
                     width="20" height="20" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

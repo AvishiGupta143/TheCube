@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 25px;
+    padding-top: 100px;
     padding-left: 40px;
 }
 .TeacherProfilePage > small{
@@ -52,6 +53,7 @@
     padding: 20px;
     border: 1px solid #E5E5E5;
     box-sizing: border-box;
+    background: #F9F9F9;
     border-radius: 10px;
     margin-top: 30px;
 }
@@ -86,17 +88,22 @@
     height: 40px;
     border: none;
     outline: none;
-    background: #ED383F;
     border-radius: 50px;
     font-family: Mulish;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 23px;
-    color: #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    color: #ED383F;
 }
 .AppliedBtn{
-    background:#209616 !important;
+    color: #209616 !important;
+}
+.CheckSvg{
+    margin-right: 5px;
 }
 .EachProject > p{
     margin-top: 20px;

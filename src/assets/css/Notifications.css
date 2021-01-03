@@ -1,0 +1,81 @@
+.NotificationDiv{
+    padding: 35px;
+    padding-top: 120px;
+    width: 100%;
+    margin: auto;
+}
+.NotificationDiv > h4{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+    margin-bottom: 30px;
+}
+
+.EachNotificationDiv{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.EachNotificationDiv tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.EachNotificationDiv th{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+    width: 70%;
+    padding: 20px;
+}
+.EachNotificationDiv td{
+    padding: 20px;
+}
+.EachNotificationDiv td img{
+    width: 50px;
+}
+.SmallWidth{
+    width: 50px;
+    padding-right: 0px !important;
+}
+
+.AcceptBtn{
+    background: #ED383F;
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.DeclineBtn{
+    border: 1px solid #ED383F;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #ED383F;
+    background-color: transparent;
+}
+.CrossSvg{
+    margin-right: 5px;
+    margin-top: -5px;
+}
