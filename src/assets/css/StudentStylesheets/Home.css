@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Inter);
 @import url(https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 button:focus{
     outline: none;
 }
@@ -16,6 +17,7 @@ a{
 a:hover{
     color: inherit;
 }
+
 .TopNavBar{
     height: 80px;
     width: 100%;
@@ -108,4 +110,61 @@ a:hover{
 
 .WorkingDiv{
     width: 60%;
+}
+.LOGOUTBUTTONCLASS{
+    background: none;
+    width: auto;
+    border: none;
+    outline: none;
+}
+
+.LogoutModalBody{
+    text-align: center;
+}
+.LogoutModalBody > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+}
+.LogoutModalBody > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.LogoutDone{
+    background: #ED383F;
+    border-radius: 50px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    height: 50px;
+    width: 35%;
+    outline: none;
+    border: none;
+    margin-right: 12px;
+}
+.LogoutNotDone{
+    height: 50px;
+    width: 35%;
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    border: 1px solid #ED383F;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
 }

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap/dist/react-bootstrap.min.js";
 import { Modal } from 'react-bootstrap'
-import "../../assets/css/TeacherProfile.css";
+import "../../assets/css/StudentStylesheets/TeacherProfile.css";
 import { Link, withRouter } from 'react-router-dom';
 
 export class TeacherProfile extends Component {
@@ -86,11 +86,13 @@ export class TeacherProfile extends Component {
                         <p>TECHNOLOGY REQUIRED</p>
                         <span>Python, Django Framework, MySQL</span>
                         <p>DESCRIPTION</p>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem diam ut ac quisque mattis dignissim. 
-                            Donec urna egestas nulla tortor ultricies tincidunt. A gravida pellentesque dui nunc, lectus. 
-                            Nullam at commodo sed ultrices. Dolor porta integer sed et. Lorem diam ut ac quisque mattis dignissim. 
-                            Donec urna egestas nulla tortor ultricies tincidunt. 
-                            A gravida pellentesque dui nunc, lectus. Donec urna egestas nulla tortor ultricies tincidunt.
+                        <span>
+                            Online auction however is a different business model where the items are sold through price bidding. 
+                            Usually bidding have start price and ending time. Potential buyers in auction and the winner is the one 
+                            who bids the item for highest price. We treat the fraud detection with a binary classification. 
+                            For buying product online user have to provide his personal details like email address, license number, 
+                            PAN number etc. Only the valid user will have authority to bid. This prevents various frauds according in 
+                            online shopping.
                         </span>
                     </div>
                 </div>

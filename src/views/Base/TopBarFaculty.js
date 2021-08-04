@@ -5,16 +5,16 @@ import '../../assets/css/StudentStylesheets/Home.css';
 import { Link, withRouter } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 
-export class TopBar extends Component {
+export class TopBarFaculty extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
              DashBoardClicked:true,
-             FacultiesClicked:false,
-             StudentClicked:false,
-             ProfileClicked:false,
+             TeamClicked:false,
              ProjectClicked:false,
+             SuggestionsClicked:false,
+             ProfileClicked:false,
              LogoutClicked:false
         }
     }
@@ -81,52 +81,51 @@ export class TopBar extends Component {
         if (str === 'Dashboard'){
             this.setState({
                 DashBoardClicked:true,
-                FacultiesClicked:false,
-                StudentClicked:false,
-                ProfileClicked:false,
-                ProjectClicked:false
+                TeamClicked:false,
+                ProjectClicked:false,
+                SuggestionsClicked:false,
+                ProfileClicked:false
             })
 
-        }else if (str === 'Faculties'){
+        }else if (str === 'Team'){
             this.setState({
                 DashBoardClicked:false,
-                FacultiesClicked:true,
-                StudentClicked:false,
-                ProfileClicked:false,
-                ProjectClicked:false
-            })
-
-        }else if (str === 'Students'){
-            this.setState({
-                DashBoardClicked:false,
-                FacultiesClicked:false,
-                StudentClicked:true,
-                ProfileClicked:false,
-                ProjectClicked:false
+                TeamClicked:true,
+                ProjectClicked:false,
+                SuggestionsClicked:false,
+                ProfileClicked:false
             })
 
         }else if (str === 'Projects'){
             this.setState({
                 DashBoardClicked:false,
-                FacultiesClicked:false,
-                StudentClicked:false,
-                ProfileClicked:false,
-                ProjectClicked:true
+                TeamClicked:false,
+                ProjectClicked:true,
+                SuggestionsClicked:false,
+                ProfileClicked:false
+            })
+
+        }else if (str === 'Suggestions'){
+            this.setState({
+                DashBoardClicked:false,
+                TeamClicked:false,
+                ProjectClicked:false,
+                SuggestionsClicked:true,
+                ProfileClicked:false
             })
 
         }else{
             this.setState({
                 DashBoardClicked:false,
-                FacultiesClicked:false,
-                StudentClicked:false,
-                ProfileClicked:true,
-                ProjectClicked:false
+                TeamClicked:false,
+                ProjectClicked:false,
+                SuggestionsClicked:false,
+                ProfileClicked:true
             })
         }
 
     }
 
-    
     CloseLogoutModal = () =>{
         this.setState({
             LogoutClicked:false
@@ -137,26 +136,27 @@ export class TopBar extends Component {
             LogoutClicked:true
         })
     }
+    
 
     render() {
         return (
             <Fragment>
                 <div className='TopNavBar'>
-                    <h4><Link to='/cube/studentdashboard/welcomestudent'>The Cube</Link></h4>
+                    <h4><Link to='/cube/facultydashboard/welcomefaculty'>The Cube</Link></h4>
                     <div className='Navitems'>
-                    <span onClick={ () => {this.ToggleNavbar('Dashboard')}}><Link to='/cube/studentdashboard/welcomestudent'>Dashboard</Link>{this.state.DashBoardClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Dashboard')}}><Link to='/cube/facultydashboard/welcomefaculty'>Dashboard</Link>{this.state.DashBoardClicked ? <div className='UNDERLINE'></div> : null}</span>
 
-                    <span onClick={ () => {this.ToggleNavbar('Faculties')}}><Link to='/cube/studentdashboard/SelectMentor'>Faculties</Link>{this.state.FacultiesClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Team')}}><Link to='/cube/facultydashboard/myteam'>Team</Link>{this.state.TeamClicked ? <div className='UNDERLINE'></div> : null}</span>
 
-                    <span onClick={ () => {this.ToggleNavbar('Students')}}><Link to='/cube/studentdashboard/studentlist'>Students</Link>{this.state.StudentClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Projects')}}><Link to='/cube/facultydashboard/myprojects'>Projects</Link>{this.state.ProjectClicked ? <div className='UNDERLINE'></div> : null}</span>
 
-                    <span onClick={ () => {this.ToggleNavbar('Projects')}}><Link to='/cube/studentdashboard/AllProjects'>Projects</Link>{this.state.ProjectClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Suggestions')}}><Link to='/cube/facultydashboard/suggestions'>Suggestions</Link>{this.state.SuggestionsClicked ? <div className='UNDERLINE'></div> : null}</span>
 
-                    <span onClick={ () => {this.ToggleNavbar('Profile')}}><Link to='/cube/studentdashboard/StudentProfile'>Profile</Link>{this.state.ProfileClicked ? <div className='UNDERLINE'></div> : null}</span>
+                    <span onClick={ () => {this.ToggleNavbar('Profile')}}><Link to='/cube/facultydashboard/profile'>Profile</Link>{this.state.ProfileClicked ? <div className='UNDERLINE'></div> : null}</span>
                     </div>
                     <span className='DIVIDER'></span>
 
-                    <Link to='/cube/studentdashboard/notifications'>
+                    <Link to='/cube/facultydashboard/notifications'>
                     <svg className='NOTIFICATION'
                     width="20" height="20" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7C16 5.4087 15.3679 3.88258 14.2426 2.75736C13.1174 1.63214 11.5913 1 
@@ -204,4 +204,4 @@ export class TopBar extends Component {
     }
 }
 
-export default withRouter(TopBar)
+export default withRouter(TopBarFaculty)

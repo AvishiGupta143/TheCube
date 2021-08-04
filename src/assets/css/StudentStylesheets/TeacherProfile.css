@@ -99,6 +99,9 @@
     border-radius: 50px;
     color: #ED383F;
 }
+.EDITBTN{
+    width: 10% !important;
+}
 .AppliedBtn{
     color: #209616 !important;
 }

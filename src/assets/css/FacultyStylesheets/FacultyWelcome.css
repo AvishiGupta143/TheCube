@@ -1,61 +1,27 @@
-@import url(https://fonts.googleapis.com/css2?family=Spectral&display=swap);
 
-.COMPLETEPROJECTHEAD{
-    width: 100%;
-    height:300px;
-    background-color: #ED383F;
+.TeamMembersDiv{
     display: flex;
     flex-direction: row;
-    padding-top: 70px;
+    padding: 15px;
+}
+.TeamMembersDiv > img{
+    width: 10%;
+    height: auto;
 }
 
-.COMPLETEPROJECTHEAD > img{
-    width: auto;
-    margin-left: auto;
-    margin-right: 50px;
-    height: 180px;
-}
-
-.COMPLETEPROJECTINFO{
-    padding: 30px;
-    width:auto;
-    display: flex;
-    flex-direction: column;
-}
-.COMPLETEPROJECTINFO > h3{
-    font-family: Spectral;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 61px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-left: 30px;
-}
-
-.COMPLETEPROJECTINFO > p{
+.TeamMembersDiv > span{
+    margin: auto;
+    margin-left: 20px;
     font-family: Mulish;
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
-    margin: 0;
-    margin-left: 30px;
-}
-
-.COMPLETEPROJECTCONTENT{
-    /* z-index: 100; */
-    width: 95%;
-    margin: auto;
-    height: auto;
-    margin-top: -60px;
-    display: flex;
-    flex-direction: row;
+    color: #252525;
 }
 
 
-.MeetingDiv{
+.UploadDiv{
     width: 80%;
     height: auto;
     text-align: center;
@@ -66,7 +32,7 @@
     padding: 15px;
     padding-bottom: 30px;
 }
-.MeetingDiv > p{
+.UploadDiv > p{
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
@@ -75,10 +41,10 @@
     color: #A6A6A6;
     margin-top: -20px;
 }
-.MeetingDiv > button{
+.UploadDiv > button{
     background: #ED383F;
     border-radius: 50px;
-    width: 100%;
+    width: 80%;
     height: 50px;
     font-family: Mulish;
     font-style: normal;
@@ -89,22 +55,14 @@
     border: none;
     outline: none;
 }
-.MeetingModalHead > h3{
-    font-family: Spectral;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    color: #ED383F;
-    margin: 0px;
-}
 
-.MeetingModalBody{
+
+.UploadProjectModalBody{
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
 }
-.MeetingModalBody > p{
+.UploadProjectModalBody > p{
     width: 95%;
     font-family: Mulish;
     font-style: normal;
@@ -117,7 +75,7 @@
     margin-bottom: 5px;
 }
 
-.MeetingModalBody > span{
+.UploadProjectModalBody > span{
     width: 95%;
     margin: auto;
     font-family: Mulish;
@@ -128,14 +86,15 @@
     color: #252525;
 }
 
-.MeetingModalBody > input{
+.UploadProjectModalBody > input{
     background: #F9F9F9;
     border-radius: 10px;   
     height: 50px;
     padding: 5px; 
+    padding-left: 10px;
     border: none;
     outline: none;
-    width: 48%;
+    width: 98%;
     margin: auto;
     margin-top:20px;
     font-family: Mulish;
@@ -145,7 +104,7 @@
     line-height: 20px;
     color: #A6A6A6;
 }
-.MeetingModalBody > textarea{
+.UploadProjectModalBody > textarea{
     background: #F9F9F9;
     border-radius: 10px;   
     height: 150px;
@@ -163,10 +122,10 @@
     color: #A6A6A6;
 }
 
-.MeetingModalBody > button{
+.UploadProjectModalBody > button{
     background: #ED383F;
     border-radius: 50px;
-    width: 60%;
+    width: 20%;
     height: 50px;
     margin: auto;
     margin-top: 30px;

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap/dist/react-bootstrap.min.js";
-import "../../assets/css/StudentSideNav.css";
+import "../../assets/css/StudentStylesheets/StudentSideNav.css";
 import { Link } from 'react-router-dom';
 
 export class StudentSideNav extends Component {

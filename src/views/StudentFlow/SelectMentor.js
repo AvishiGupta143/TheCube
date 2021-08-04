@@ -1,20 +1,43 @@
 import React, { Component, Fragment } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap/dist/react-bootstrap.min.js";
-import "../../assets/css/SelectMentor.css";
+import "../../assets/css/StudentStylesheets/SelectMentor.css";
 import { Link } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
+import API from "../../API/API";
 
 export class SelectMentor extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             ShowSuggestModal:false
+             ShowSuggestModal:false,
+             FacultyList:[],
+            //  Projects:{
+            //      1:"Secure Online Auction System",
+            //      2:"Android Battery Saver System",
+            //      3:"Voice Tracing and Recognition",
+            //      4:"E-Commerce Website"
+            //  }
         }
     }
 
+    componentDidMount(){
+        this.GetAllFaculties()
+    }
 
+    GetAllFaculties = async () => {
+        // API CALL
+        const response = await API.GetAvailableFaculty();
+        if (response.ok) {
+          console.log(response.data);
+          this.setState({
+            FacultyList:response.data.FacultyList
+          })
+        } else {
+          console.log("Error");
+        }
+      };
     SuggestProjectModal = () => {
         this.setState({
             ShowSuggestModal:true
@@ -35,7 +58,7 @@ export class SelectMentor extends Component {
                     <div className='SelectMentorProcessFlow'>
                         <h4>Select a Mentor</h4>
 
-                        <div className='SearchBar'>
+                        {/* <div className='SearchBar'>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.22226 13.4445C10.6587 13.4445 13.4445 
                             10.6587 13.4445 7.22226C13.4445 3.7858 10.6587 1 7.22226 1C3.7858 
@@ -47,7 +70,7 @@ export class SelectMentor extends Component {
 
                             <input type='text' placeholder='Search'></input>
 
-                        </div>
+                        </div> */}
 
                     </div>
                     <p>
@@ -62,13 +85,16 @@ export class SelectMentor extends Component {
                             <th>AVAILIBILITY</th>
                             <th></th>
                         </thead>
+                        
+                        {this.state.FacultyList.map((id, val) =>
                         <tr>
-                            <td className='FACULTYNAME'>Ms. Shikha Jain</td>
-                            <td>Assistant Professor, IT</td>
-                            <td>Voice Recognition</td>
-                            <td className='GREENCOLOR'>Available</td>
-                            <td><Link to='/cube/studentdashboard/MentorProfile'><button className='VIEW'>View</button></Link></td>
+                        <td className='FACULTYNAME'>{id.Name}</td>
+                        <td>{id.Position}, {id.Department}</td>
+                        <td>Voice Recognition</td>
+                        <td className={id.Availibility ? "GREENCOLOR" : "REDCOLOR"}>{id.Availibility ? "Available" : "Unavailable"}</td>
+                        <td><Link to='/cube/studentdashboard/MentorProfile'><button className='VIEW'>View</button></Link></td>
                         </tr>
+                        )}
                     </table>
                 
                     <button onClick={this.SuggestProjectModal}>Suggest a Project</button>

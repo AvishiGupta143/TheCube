@@ -1,0 +1,97 @@
+.ProjectStatusPage{
+    padding-top: 70px;
+}
+.ProjectStatusDiv{
+    padding: 40px;
+    padding-bottom: 0;
+}
+.ProjectStatusDiv > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+}
+.ProjectStatusDiv > h5{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 37px;
+    color: #ED383F;
+    margin-top: 15px;
+}
+.ProjectStatusDiv> small{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+}
+
+.ProjStatusProgressBar{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.ProjStatusProgressBar tr{
+    background: #F9F9F9;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.ProjStatusProgressBar th{
+    padding: 20px;
+    width: 20%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+.SmallTd{
+    width: 5% !important;
+}
+.ProjStatusProgressBar td{
+    padding: 20px;
+    width: 20%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+}
+
+.MARKSPAN{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #252525;   
+}
+
+.FileNameColor{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline !important;
+    color: #2F80ED !important;
+}
+
+.YELLOWCOLOR{
+    color: #FFCB00 !important;
+}
+
+.ToAssignmentBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #A6A6A6;
+}

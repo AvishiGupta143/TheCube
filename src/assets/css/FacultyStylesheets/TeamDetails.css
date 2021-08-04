@@ -1,0 +1,181 @@
+.TeamDetailsPage{
+    padding-top: 50px;
+}
+
+.NoTeamFormedDiv{
+    padding: 30px;
+}
+
+.NoTeamFormedDiv > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+}
+
+.TeamFormedPage{
+    padding: 40px;
+}
+.TeamFormedPage > h3{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #ED383F;
+}
+.TeamFormedPage> small{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+}
+
+.EachTeamBlock{
+    background: #F9F9F9;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.EachTeamBlock > h5{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #252525;
+}
+.EachTeamBlock > p{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A6A6A6;
+    margin-bottom: 15px;
+}
+.EachTeamBlock > small{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+    margin-bottom: 8px;
+}
+.EachTeamBlock > span{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+    margin-bottom: 30px;
+}
+.TeamTable th{
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+
+.TeamTable td{
+    padding: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #252525;
+}
+
+.ActionsForSuggestionsDiv{
+    width: 30%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.AcceptButton{
+    margin: auto;
+    width: 40%;
+    height: 50px;
+    background: #ED383F;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.AcceptButton:hover{
+    color: #ED383F;
+    background: #FFFFFF;
+    border: 1px solid #ED383F;
+}
+
+.DeclineButton{
+    width: 40%;
+    margin: auto;
+    height: 50px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED383F;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+.DeclineButton:hover{
+    background: #ED383F;
+    color: #FFFFFF;
+}
+
+.StatusProjectGreen{
+    width: 10%;
+    outline: none;
+    border: none;
+    background: rgba(52, 168, 83, 0.2);
+    border-radius: 10px;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 37px;
+    margin: auto;
+    margin-top: 15px;
+    color: #34A853;
+}
+.StatusProjectRed{
+    width: 10%;
+    outline: none;
+    border: none;
+    color: #ED383F;
+    background: rgba(237, 56, 63, 0.2);
+    border-radius: 10px;
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 37px;
+    margin: auto;
+    margin-top: 15px;
+}
